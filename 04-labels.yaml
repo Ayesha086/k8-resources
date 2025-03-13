@@ -2,9 +2,8 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: labels
-  annotations: 
   labels:
-      buildURL: "https://jenkins.com/expense/job/backend/23"
+      project: expense
       component: backend
       environment: dev
 spec:
