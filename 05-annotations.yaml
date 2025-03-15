@@ -6,8 +6,7 @@ spec:
   annotations: 
   labels:
       buildURL: "https://jenkins.com/expense/job/backend/23"
-      cimageregistry: "https://hub.docker.com/"
-spec:
+      imageregistry: "https://hub.docker.com/"
   containers:
   - name: nginx
     image: nginx
