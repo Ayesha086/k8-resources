@@ -4,9 +4,26 @@ metadata:
   name: nginx
 spec: 
   selector:
+    project: expense
+    component: backend
+    environment: dev
   ports:
   - protocol: TCP
     port: 80 #service port
     targetPort: 80 #container port number
 
-    
+---
+  
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+  labels: 
+  selector:
+    project: expense
+    component: backend
+    environment: dev
+  spec:
+   containers:
+   - name: nginx
+     image: nginx
