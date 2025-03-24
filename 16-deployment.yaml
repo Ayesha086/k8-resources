@@ -26,7 +26,7 @@ spec:
     spec:   
      containers:
      - name: nginx
-       image: ayeshacs540/deployment:1.0
+       image: ayeshacs540/deployment:2.0
        ports:
        - containerPort: 80
 ---
