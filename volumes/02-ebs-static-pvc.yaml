@@ -16,7 +16,7 @@ kind: Pod
 metadata:
   name: ebs-static
   labels:
-  purpose: "ebs-static-demo"
+    purpose: "ebs-static-demo"
 spec:
   containers:
   - name: nginx
