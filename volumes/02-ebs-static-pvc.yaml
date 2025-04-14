@@ -38,12 +38,8 @@ metadata:
   name: nginx-lb
 spec: 
   type: LoadBalancer
-  selector: #labels arre used as selectors
-    project: expense
-    component: backend
-    environment: dev
-    version: "1.0.0"
-    demo: lb
+  selector:   
+    purpose: "ebs-static" #labels are used as selectors
   ports:
   - protocol: TCP
     port: 80 #service port
